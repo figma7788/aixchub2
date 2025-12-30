@@ -10,15 +10,11 @@ import { Leaderboard } from './components/Leaderboard';
 import { Settings } from './components/Settings';
 import { Playground } from './components/Playground';
 
-import { AMAPoster } from './components/AMAPoster';
-
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
 
   const renderView = () => {
     switch (currentView) {
-      case 'ama-poster':
-        return <AMAPoster />;
       case 'home':
         return <WhitelistCopy />;
       case 'prediction-market':

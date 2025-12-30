@@ -23,7 +23,7 @@ export const PredictionMarket = () => {
       <div className="relative z-10">
         
         {/* Header Section - More Structured */}
-        <GlassCard className="relative h-64 flex flex-col justify-end gap-8 mb-2 overflow-hidden p-8 border-0">
+        <GlassCard className="relative h-64 flex flex-col justify-end gap-8 mb-2 overflow-hidden p-8 border-0 bg-white/5">
           <div className="absolute inset-0">
             <SplineWrapper scene="https://prod.spline.design/ywxwbIpwDO5pPPSR/scene.splinecode" />
           </div>
@@ -43,7 +43,7 @@ export const PredictionMarket = () => {
           <div className="lg:col-span-8 flex flex-col gap-2">
             
             {/* Main Chart Card */}
-            <GlassCard className="overflow-hidden relative border-0">
+            <GlassCard className="overflow-hidden relative border-0 bg-white/5">
                <div className="p-6 flex items-end justify-between">
                   <div>
                      <div className="text-neutral-500 text-sm mb-1 font-medium tracking-wide">Current Price</div>
@@ -100,7 +100,7 @@ export const PredictionMarket = () => {
                            type="linear" 
                            dataKey="price" 
                            stroke="#d4d4d8" 
-                           strokeWidth={2} 
+                           strokeWidth={1} 
                            fill="url(#colorPrice)" 
                            activeDot={{ r: 4, fill: '#fff', stroke: '#d4d4d8', strokeWidth: 2 }}
                         />
@@ -111,7 +111,7 @@ export const PredictionMarket = () => {
 
             {/* Trade Interface */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 flex-1">
-               <GlassCard className="h-full p-6 flex flex-col justify-between relative overflow-hidden group transition-all cursor-pointer border-0">
+               <GlassCard className="h-full p-6 flex flex-col justify-between relative overflow-hidden group transition-all cursor-pointer border-0 bg-white/5">
                   <div className="absolute top-0 right-0 p-4 opacity-20 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
                      <TrendingUp className="text-emerald-500 w-12 h-12 drop-shadow-[0_0_15px_rgba(16,185,129,0.5)]" />
                   </div>
@@ -132,7 +132,7 @@ export const PredictionMarket = () => {
                   </div>
                </GlassCard>
 
-               <GlassCard className="h-full p-6 flex flex-col justify-between relative overflow-hidden group transition-all cursor-pointer border-0">
+               <GlassCard className="h-full p-6 flex flex-col justify-between relative overflow-hidden group transition-all cursor-pointer border-0 bg-white/5">
                   <div className="absolute top-0 right-0 p-4 opacity-20 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
                      <TrendingDown className="text-rose-500 w-12 h-12 drop-shadow-[0_0_15px_rgba(244,63,94,0.5)]" />
                   </div>
@@ -163,7 +163,7 @@ export const PredictionMarket = () => {
           <div className="lg:col-span-4 space-y-2">
             
             {/* Streak Status - Redesigned as "Mission Card" (Fintech Style) */}
-            <GlassCard className="overflow-hidden relative border-0">
+            <GlassCard className="overflow-hidden relative border-0 bg-white/5">
               
               {/* Top Row: Combo & Multiplier */}
               <div className="p-6 pb-2 flex items-center justify-between relative z-10">
@@ -219,7 +219,7 @@ export const PredictionMarket = () => {
             </GlassCard>
 
             {/* Activity Tabs */}
-            <GlassCard className="overflow-hidden flex flex-col h-[440px] border-0">
+            <GlassCard className="overflow-hidden flex flex-col h-[440px] border-0 bg-white/5">
                <div className="flex shrink-0">
                   <button 
                     onClick={() => setActiveTab('feed')}
@@ -251,7 +251,9 @@ export const PredictionMarket = () => {
                                <div className={`text-sm font-medium capitalize ${trade.side === 'Long' ? 'text-emerald-400' : 'text-rose-500'}`}>
                                   {trade.side}
                                </div>
-                               <div className="text-xs font-medium text-neutral-500">{trade.amount}</div>
+                               <div className="text-xs font-medium text-neutral-500">
+                                   {trade.id % 2 === 1 ? '+10 Points' : '-10 Points'}
+                               </div>
                             </div>
                          </div>
                       ))}

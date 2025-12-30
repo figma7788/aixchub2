@@ -19,7 +19,7 @@ export const Profile = () => {
         {/* Card Visual & Balance */}
         <div className="h-full">
           {/* The Card */}
-          <div className="w-full aspect-[1.586/1] rounded-[7px] bg-neutral-900/30 relative overflow-hidden group">
+          <div className="w-full aspect-[1.586/1] rounded-[7px] bg-white/5 relative overflow-hidden group">
                 {/* Content Overlay */}
                 <SplineWrapper scene="https://prod.spline.design/ZgJfIVZIGUnDWWiZ/scene.splinecode" className="absolute inset-0 z-0" interactive={true} />
                 <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-between z-10 pointer-events-none">
@@ -56,7 +56,7 @@ export const Profile = () => {
         {/* Rewards & Stats */}
         <div className="h-full">
             <div className="grid grid-cols-2 gap-2 h-full">
-                <div className="bg-neutral-900/30 rounded-[7px] p-5 hover:bg-white/5 transition-all cursor-pointer group relative overflow-hidden">
+                <div className="bg-white/5 rounded-[7px] p-5 transition-all cursor-pointer group relative overflow-hidden">
                     {/* Background Glow */}
                     <div className="absolute -right-6 -top-6 w-24 h-24 bg-blue-500/10 blur-[40px] rounded-full group-hover:bg-blue-500/20 transition-colors"></div>
                     
@@ -79,7 +79,7 @@ export const Profile = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-neutral-900/30 rounded-[7px] p-5 hover:bg-white/5 transition-all cursor-pointer group relative overflow-hidden">
+                <div className="bg-white/5 rounded-[7px] p-5 transition-all cursor-pointer group relative overflow-hidden">
                     {/* Background Glow */}
                     <div className="absolute -right-6 -top-6 w-24 h-24 bg-purple-500/10 blur-[40px] rounded-full group-hover:bg-purple-500/20 transition-colors"></div>
                     
@@ -102,7 +102,7 @@ export const Profile = () => {
                     </div>
                 </div>
 
-                <div className="bg-neutral-900/30 rounded-[7px] p-5 hover:bg-white/5 transition-all cursor-pointer group relative overflow-hidden">
+                <div className="bg-white/5 rounded-[7px] p-5 transition-all cursor-pointer group relative overflow-hidden">
                     {/* Background Glow */}
                     <div className="absolute -right-6 -top-6 w-24 h-24 bg-[#5865F2]/10 blur-[40px] rounded-full group-hover:bg-[#5865F2]/20 transition-colors"></div>
                     
@@ -127,7 +127,7 @@ export const Profile = () => {
                     </div>
                 </div>
 
-                <div className="bg-neutral-900/30 rounded-[7px] p-5 hover:bg-white/5 transition-all cursor-pointer group relative overflow-hidden">
+                <div className="bg-white/5 rounded-[7px] p-5 transition-all cursor-pointer group relative overflow-hidden">
                     {/* Background Glow */}
                     <div className="absolute -right-6 -top-6 w-24 h-24 bg-rose-500/10 blur-[40px] rounded-full group-hover:bg-rose-500/20 transition-colors"></div>
                     
@@ -152,7 +152,7 @@ export const Profile = () => {
         </div>
       </div>
 
-      <div className="bg-neutral-900/30 rounded-[7px] overflow-hidden backdrop-blur-sm">
+      <div className="bg-white/5 rounded-[7px] overflow-hidden backdrop-blur-sm">
         <div className="p-6 flex items-center gap-3">
             <h3 className="text-[28px] font-medium text-white">Connected Accounts</h3>
         </div>
@@ -243,7 +243,7 @@ export const Profile = () => {
                 </button>
             </div>
         </div>
-         <div className="p-6 text-center bg-neutral-900/50">
+         <div className="p-6 text-center bg-white/5">
              <p className="text-white font-medium mb-1">Connect More Accounts</p>
              <p className="text-xs text-neutral-500">Each connection gives you bonus credits and unlocks special tasks!</p>
         </div>

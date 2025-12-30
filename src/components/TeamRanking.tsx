@@ -34,76 +34,80 @@ export const TeamRanking = () => {
                 </div>
             </div>
 
-            {/* User Stats Data */}
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8">
-                <div className="flex items-center justify-between w-full md:w-auto gap-4 md:gap-8">
-                    {/* User Info */}
-                    <div className="flex items-center gap-3">
-                        <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-neutral-700 to-neutral-600 flex items-center justify-center text-xs font-bold text-white shadow-inner">
-                            JD
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="text-[10px] text-neutral-400 tracking-wider font-semibold">User</span>
-                            <span className="text-sm font-bold text-white leading-tight">John_Doe</span>
-                        </div>
-                    </div>
-
-                    <div className="w-px h-8 bg-white/10 hidden md:block"></div>
-
-                    {/* Team Info */}
-                    <div className="flex items-center gap-3">
-                         <div className="flex flex-col items-center justify-center w-9 h-9 bg-[#384197]/20 rounded-[7px]">
-                            <span className="text-[8px] text-[#A5B4FC] font-bold">Rank</span>
-                            <span className="text-xs font-bold text-white">#42</span>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="text-[10px] text-neutral-400 tracking-wider font-semibold">Team</span>
-                            <span className="text-sm font-bold text-white leading-tight">Alpha Squad</span>
-                        </div>
-                    </div>
-                </div>
+            {/* User Stats Data (Redesigned V3 - Borderless & Clean) */}
+            <div className="relative rounded-2xl bg-gradient-to-r from-[#111111] to-[#0A0A0A] overflow-hidden shadow-2xl">
+                {/* Subtle Top Shine */}
+                <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-30"></div>
                 
-                {/* Stats */}
-                <div className="flex items-center justify-between w-full md:w-auto gap-2 md:gap-8 pt-3 md:pt-0 border-t md:border-t-0 border-white/5 md:border-0 mt-2 md:mt-0">
-                    <div className="flex flex-col items-center md:items-end">
-                        <span className="text-[10px] text-neutral-500 tracking-wider mb-0.5">Members</span>
-                        <span className="text-sm font-medium text-neutral-200">128</span>
-                    </div>
-                    
-                    <div className="w-px h-8 bg-white/10 hidden md:block"></div>
+                <div className="relative z-10 flex flex-col xl:flex-row p-6 xl:items-center gap-6 xl:gap-0">
+                    {/* Left: Identity Section */}
+                    <div className="flex items-center gap-8 xl:pr-10 xl:mr-10 xl:border-r border-white/5">
+                         {/* User */}
+                         <div className="flex items-center gap-4 group/user cursor-pointer">
+                            <div className="relative">
+                                <div className="w-12 h-12 rounded-[7px] bg-[#1A1A1A] flex items-center justify-center text-sm font-bold text-neutral-300 group-hover/user:text-white transition-colors">
+                                    JD
+                                </div>
+                                <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-4 border-[#0F0F0F]"></div>
+                            </div>
+                            <div>
+                                <div className="text-[10px] tracking-wider text-neutral-500 font-semibold mb-0.5">Player</div>
+                                <div className="text-base font-bold text-white group-hover/user:text-purple-400 transition-colors">John_Doe</div>
+                            </div>
+                         </div>
 
-                    <div className="flex flex-col items-center md:items-end">
-                        <span className="text-[10px] text-neutral-500 tracking-wider mb-0.5">Score</span>
-                        <span className="text-sm font-bold text-white">452,190</span>
-                    </div>
-
-                    <div className="w-px h-8 bg-white/10 hidden md:block"></div>
-
-                    <div className="flex flex-col items-center md:items-end">
-                        <span className="text-[10px] text-neutral-500 tracking-wider mb-0.5">Contrib.</span>
-                        <span className="text-sm font-bold text-[#C084FC]">12,450</span>
-                    </div>
-
-                    <div className="w-px h-8 bg-white/10 hidden md:block"></div>
-
-                    <div className="flex flex-col items-center md:items-end group cursor-pointer">
-                        <span className="text-[10px] text-neutral-500 tracking-wider mb-0.5 group-hover:text-white transition-colors">Invite</span>
-                        <div className="flex items-center gap-1.5 group-active:scale-95 transition-transform">
-                             <span className="text-sm font-bold text-white tracking-widest">8X92K</span>
-                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-500 group-hover:text-white transition-colors">
-                                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
-                                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
-                             </svg>
-                        </div>
+                         {/* Team */}
+                         <div className="flex items-center gap-4 group/team cursor-pointer">
+                            <div className="w-10 h-10 rounded-[7px] bg-[#1A1A1A] flex items-center justify-center text-xs font-bold text-indigo-400">
+                                #42
+                            </div>
+                            <div>
+                                <div className="text-[10px] tracking-wider text-neutral-500 font-semibold mb-0.5">Squad</div>
+                                <div className="text-base font-bold text-white group-hover/team:text-indigo-400 transition-colors">Alpha</div>
+                            </div>
+                         </div>
                     </div>
 
-                    <div className="w-px h-8 bg-white/10 hidden md:block"></div>
+                    {/* Right: Stats Section */}
+                    <div className="flex-grow grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-y-8 gap-x-4 items-start">
+                         {/* Stat 3 (Members) */}
+                         <div className="flex flex-col">
+                            <span className="text-[10px] text-neutral-500 font-medium mb-1.5">Members</span>
+                            <div className="flex items-baseline gap-1">
+                                <span className="text-xl font-medium text-neutral-200">128</span>
+                                <span className="text-sm text-neutral-600">/ 200</span>
+                            </div>
+                         </div>
 
-                    <div className="flex flex-col items-center md:items-end">
-                         <span className="text-[10px] text-neutral-500 tracking-wider mb-0.5">Trend</span>
-                         <div className="flex items-center gap-1 text-[#D946EF]">
-                            <ArrowUp size={12} strokeWidth={3} />
-                            <span className="text-sm font-bold">+2</span>
+                         {/* Stat 1 (Total Score) */}
+                         <div className="flex flex-col">
+                            <span className="text-[10px] text-neutral-500 font-medium mb-1.5">Total Score</span>
+                            <span className="text-2xl font-medium text-white tracking-tight">452,190</span>
+                         </div>
+
+                         {/* Stat 2 (Contribution) */}
+                         <div className="flex flex-col">
+                            <span className="text-[10px] text-neutral-500 font-medium mb-1.5">Contribution</span>
+                            <span className="text-2xl font-medium text-[#C084FC]">12.4K</span>
+                         </div>
+
+                         {/* Stat 4: Trend */}
+                         <div className="flex flex-col">
+                             <span className="text-[10px] text-neutral-500 font-medium mb-1.5">Trend</span>
+                             <div className="flex items-center gap-2 text-[#D946EF]">
+                                <ArrowUp size={14} strokeWidth={2.5} />
+                                <span className="text-lg font-bold">+2</span>
+                             </div>
+                         </div>
+
+                         {/* Action: Invite */}
+                         <div className="col-span-2 md:col-span-1 md:justify-self-end mt-2 md:mt-0 self-center">
+                             <button className="group relative flex items-center gap-3 pl-4 pr-2 py-2 bg-[#1A1A1A] hover:bg-[#222] transition-colors rounded-full overflow-hidden">
+                                <span className="text-[10px] font-bold text-neutral-300 tracking-wider">Invite</span>
+                                <div className="px-2 py-1 bg-white/5 rounded-full text-white text-xs font-mono group-hover:bg-white group-hover:text-black transition-colors">
+                                    8X92K
+                                </div>
+                             </button>
                          </div>
                     </div>
                 </div>
@@ -120,14 +124,18 @@ export const TeamRanking = () => {
                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-slate-400 to-transparent opacity-50"></div>
                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-slate-300 to-slate-500 p-1 shadow-[0_0_20px_rgba(203,213,225,0.2)] mb-4 relative">
                     <div className="w-full h-full rounded-full bg-neutral-900 overflow-hidden flex items-center justify-center">
-                        <span className="text-2xl font-bold text-slate-300">HF</span>
+                        <span className="text-2xl font-bold text-slate-300">2nd</span>
                     </div>
                     <div className="absolute -bottom-2 -right-2 bg-neutral-900 text-slate-300 text-xs font-bold px-2 py-1 rounded-md shadow-lg">
                         #2
                     </div>
                  </div>
-                 <div className="text-white font-bold text-lg mb-1">Hal_Finney</div>
-                 <div className="text-slate-400 text-sm">1,982,450 pts</div>
+                 <div className="text-2xl md:text-3xl font-extrabold bg-gradient-to-b from-white via-slate-300 to-slate-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(203,213,225,0.5)] mt-1 mb-1">
+                    50,000 USDT
+                  </div>
+                 <div className="text-slate-400 text-xs mt-3 text-center font-medium max-w-[240px]">
+                    Eligible to attend the <span className="text-lg italic font-bold text-slate-200">Los&nbsp;Angeles</span> awards ceremony
+                 </div>
             </GlassCard>
         </div>
 
@@ -145,16 +153,19 @@ export const TeamRanking = () => {
 
                  <div className="w-28 h-28 rounded-full bg-gradient-to-br from-sky-300 via-sky-600 to-sky-900 p-1 shadow-[0_0_50px_rgba(14,165,233,0.25)] mb-6 relative">
                     <div className="w-full h-full rounded-full bg-neutral-900 overflow-hidden flex items-center justify-center relative shadow-inner">
-                        <span className="text-4xl font-bold bg-gradient-to-b from-sky-300 via-sky-600 to-sky-900 bg-clip-text text-transparent drop-shadow-sm">SN</span>
+                        <span className="text-4xl font-bold bg-gradient-to-b from-sky-300 via-sky-600 to-sky-900 bg-clip-text text-transparent drop-shadow-sm">1st</span>
                         <div className="absolute inset-0"></div>
                     </div>
                     <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-sky-400 to-sky-700 text-neutral-900 text-sm font-extrabold px-3 py-1 rounded-lg shadow-[0_0_20px_rgba(14,165,233,0.3)]">
                         #1
                     </div>
                  </div>
-                 <div className="text-2xl font-bold text-white mb-2 tracking-tight drop-shadow-[0_0_10px_rgba(14,165,233,0.2)]">Satoshi_Nakamoto</div>
-                 <div className="text-sky-400 text-lg font-medium bg-sky-950/50 px-4 py-1 rounded-full shadow-[0_0_15px_rgba(14,165,233,0.1)]">
-                    2,450,192 pts
+
+                 <div className="text-3xl md:text-4xl font-extrabold bg-gradient-to-b from-white via-sky-300 to-sky-500 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(14,165,233,0.5)] mt-2 mb-2">
+                    100,000 USDT
+                 </div>
+                 <div className="text-neutral-400 text-xs mt-3 text-center font-medium max-w-[240px]">
+                    Eligible to attend the <span className="text-lg italic font-bold text-sky-400">Los&nbsp;Angeles</span> awards ceremony
                  </div>
             </GlassCard>
         </div>
@@ -166,14 +177,18 @@ export const TeamRanking = () => {
                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#384197] to-transparent opacity-50"></div>
                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#6366F1] to-[#384197] p-1 shadow-[0_0_20px_rgba(56,65,151,0.4)] mb-4 relative">
                     <div className="w-full h-full rounded-full bg-neutral-900 overflow-hidden flex items-center justify-center">
-                        <span className="text-2xl font-bold text-[#A5B4FC]">VB</span>
+                        <span className="text-2xl font-bold text-[#A5B4FC]">3rd</span>
                     </div>
                     <div className="absolute -bottom-2 -right-2 bg-[#384197] text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg">
                         #3
                     </div>
                  </div>
-                 <div className="text-white font-bold text-lg mb-1">Vitalik_B</div>
-                 <div className="text-[#818CF8] text-sm">1,850,200 pts</div>
+                 <div className="text-2xl md:text-3xl font-extrabold bg-gradient-to-b from-white via-indigo-300 to-indigo-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(99,102,241,0.5)] mt-1 mb-1">
+                    30,000 USDT
+                  </div>
+                 <div className="hidden">
+                    Eligible to attend 
+                 </div>
             </GlassCard>
         </div>
       </div>
@@ -191,7 +206,7 @@ export const TeamRanking = () => {
       </div>
 
       {/* List Section */}
-      <GlassCard className="overflow-hidden border-0">
+      <GlassCard className="overflow-hidden border-0 bg-neutral-900/80">
         <div className="min-w-full">
             <div className="grid grid-cols-12 gap-2 md:gap-4 p-4 text-sm font-semibold text-neutral-500 capitalize tracking-wider bg-white/5">
                 <div className="col-span-2 md:col-span-1 text-center">Rank</div>
@@ -210,8 +225,23 @@ export const TeamRanking = () => {
                             <div className={`w-8 h-8 rounded-full ${user.avatar} flex items-center justify-center text-[10px] font-bold text-white/80 shrink-0`}>
                                 {user.username.substring(0, 2).toUpperCase()}
                             </div>
-                            <span className="font-medium text-neutral-200 group-hover:text-white transition-colors truncate">{user.username}</span>
-                            {user.rank <= 10 && <Flame size={14} className="text-[#A855F7] fill-[#A855F7]/20 shrink-0" />}
+                            <div className="flex flex-col min-w-0">
+                                <div className="flex items-center gap-2">
+                                    <span className="font-medium text-neutral-200 group-hover:text-white transition-colors truncate">{user.username}</span>
+                                    {user.rank <= 10 && <Flame size={14} className="text-[#A855F7] fill-[#A855F7]/20 shrink-0" />}
+                                </div>
+                                <div className="flex items-center gap-1 md:hidden opacity-80 mt-1">
+                                    <div className="text-[10px] leading-none">
+                                        <span className="text-neutral-500 font-semibold">Invite:</span>
+                                        {" "}
+                                        <span className="text-neutral-300 font-mono tracking-wider">8X92K</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-500">
+                                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                         <div className="hidden md:block col-span-2 text-center text-neutral-400">
                             {Math.floor(parseInt(user.score.replace(/,/g, '')) / 1000).toLocaleString()}

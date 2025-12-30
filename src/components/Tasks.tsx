@@ -45,7 +45,7 @@ export const Tasks = () => {
         </div>
       </div>
 
-      <GlassCard className="w-full p-4 md:p-8 space-y-8 border-0">
+      <GlassCard className="w-full p-4 md:p-8 space-y-8 border-0 bg-neutral-950/80">
         {/* Header - Styled like "All Vaults" */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
@@ -67,7 +67,7 @@ export const Tasks = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           
           {/* Card 1: Login (Completed) */}
-          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between">
+          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between bg-neutral-950/80">
             {/* Green Glow - Stronger static state */}
             <div className="absolute top-0 left-0 w-60 h-60 bg-green-500/40 blur-[100px] rounded-full -translate-x-1/2 -translate-y-1/2 group-hover:bg-green-500/60 group-hover:scale-125 transition-all duration-500"></div>
             
@@ -107,7 +107,7 @@ export const Tasks = () => {
           </GlassCard>
 
           {/* Card 2: Predictions */}
-          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between">
+          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between bg-neutral-950/80">
             {/* Purple Glow */}
             <div className="absolute top-0 left-0 w-60 h-60 bg-purple-500/40 blur-[100px] rounded-full -translate-x-1/2 -translate-y-1/2 group-hover:bg-purple-500/60 group-hover:scale-125 transition-all duration-500"></div>
             
@@ -149,7 +149,7 @@ export const Tasks = () => {
           </GlassCard>
 
           {/* Card 3: Streak (Gold) */}
-          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between">
+          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between bg-neutral-950/80">
             {/* Gold/Orange Glow */}
             <div className="absolute top-0 left-0 w-60 h-60 bg-orange-500/40 blur-[100px] rounded-full -translate-x-1/2 -translate-y-1/2 group-hover:bg-orange-500/60 group-hover:scale-125 transition-all duration-500"></div>
             
@@ -189,7 +189,7 @@ export const Tasks = () => {
           </GlassCard>
 
           {/* Card 4: Twitter */}
-          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between">
+          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between bg-neutral-950/80">
             {/* Blue Glow */}
             <div className="absolute top-0 left-0 w-60 h-60 bg-blue-500/40 blur-[100px] rounded-full -translate-x-1/2 -translate-y-1/2 group-hover:bg-blue-500/60 group-hover:scale-125 transition-all duration-500"></div>
             
@@ -229,7 +229,7 @@ export const Tasks = () => {
           </GlassCard>
 
           {/* Card 5: Discord */}
-          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between">
+          <GlassCard className="group relative p-6 overflow-hidden transition-all duration-300 border-0 flex flex-col justify-between bg-neutral-950/80">
             {/* Indigo Glow */}
             <div className="absolute top-0 left-0 w-60 h-60 bg-indigo-500/40 blur-[100px] rounded-full -translate-x-1/2 -translate-y-1/2 group-hover:bg-indigo-500/60 group-hover:scale-125 transition-all duration-500"></div>
             
@@ -269,7 +269,7 @@ export const Tasks = () => {
           </GlassCard>
 
            {/* Card 6: Coming Soon (Placeholder) */}
-           <GlassCard className="group relative p-6 overflow-hidden opacity-50 hover:opacity-100 transition-all duration-300 border-0 flex flex-col justify-between">
+           <GlassCard className="group relative p-6 overflow-hidden opacity-50 hover:opacity-100 transition-all duration-300 border-0 flex flex-col justify-between bg-neutral-950/80">
             <div className="absolute top-0 left-0 w-60 h-60 bg-neutral-500/20 blur-[100px] rounded-full -translate-x-1/2 -translate-y-1/2 group-hover:bg-neutral-500/40 group-hover:scale-125 transition-all duration-500"></div>
             
             <div className="relative z-10 flex flex-col w-full justify-between h-full">

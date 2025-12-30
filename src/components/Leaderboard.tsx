@@ -204,7 +204,7 @@ export const Leaderboard = () => {
       </div>
 
       {/* Leaderboard List */}
-      <GlassCard className="flex-1 min-h-0 overflow-hidden shadow-2xl flex flex-col rounded-2xl border-0">
+      <GlassCard className="flex-1 min-h-0 overflow-hidden shadow-2xl flex flex-col rounded-2xl border-0 bg-neutral-900/80">
         {/* Table Header */}
         <div className="flex-none grid grid-cols-12 gap-2 md:gap-4 p-3 md:p-5 text-xs md:text-sm font-semibold text-neutral-500 capitalize tracking-wider bg-white/5 rounded-t-[7px]">
             <div className="col-span-2 md:col-span-1 text-center">Rank</div>

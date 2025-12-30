@@ -125,7 +125,7 @@ export const Collaterals = () => {
   ];
 
   return (
-    <GlassCard className="mt-2 overflow-hidden border-0">
+    <GlassCard className="mt-2 overflow-hidden border-0 bg-neutral-900/80">
       {/* Header */}
       <div className="flex items-center justify-between p-6">
         <h2 className="text-[28px] font-medium text-white tracking-tight">C10 Composition</h2>
